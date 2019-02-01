@@ -10,8 +10,8 @@ API USED: https://fonoapi.freshpixl.com
 import requests
 import urllib.parse
 
-#API URL && API Token
-api_url = 'https://fonoapi.freshpixl.com/v1/getdevice?token=befa6d4f8e07dc4f85bbb8f18ec8ad246e186fc0a6cd3948&'
+#API URL
+api_url = 'https://fonoapi.freshpixl.com/v1/getdevice?'
 
 #Print credits
 print (
@@ -22,11 +22,14 @@ print (
 try :
 
   def repeat():
+    #API TOKEN
+    token = 'befa6d4f8e07dc4f85bbb8f18ec8ad246e186fc0a6cd3948'
     #Device
     device = input("Enter The Device Name📱 🌟 : ")
 
     #Add parameters to the url usung urllib
-    url = api_url + urllib.parse.urlencode({'device': device })
+    url = api_url + urllib.parse.urlencode({'token': token, 'device': device }) 
+    print(url)
     json_data = requests.get(url).json()
 
     #Print Device Details
