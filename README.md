@@ -1,3 +1,4 @@
+![picture](https://assets.pcmag.com/media/images/526201-palm-with-lego-person.jpg?width=500&height=500)
 # PHONE.LY
 ---
 Python CLI tool to get the details of any mobile device by using an api(https://fonoapi.freshpixl.com)
